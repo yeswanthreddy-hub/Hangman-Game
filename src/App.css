@@ -329,6 +329,14 @@
   }
 }
 
+.key:focus-visible,
+.topic:focus-visible,
+.back:focus-visible,
+.overlay-card button:focus-visible {
+  outline: 2px solid #2dd4bf;
+  outline-offset: 2px;
+}
+
 @media (max-width: 640px) {
   .keyboard {
     grid-template-columns: repeat(9, minmax(34px, 40px));
