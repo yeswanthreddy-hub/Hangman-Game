@@ -7,7 +7,11 @@ import './App.css'
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 const MAX_MISTAKES = 6
 
-const pickWord = (words) => words[Math.floor(Math.random() * words.length)]
+const pickWord = (words, lastWord = null) => {
+  const fresh = words.filter((w) => w !== lastWord)
+  const pool = fresh.length > 0 ? fresh : words
+  return pool[Math.floor(Math.random() * pool.length)]
+}
 
 export default function App() {
   const [topic, setTopic] = useState(null)
@@ -17,7 +21,7 @@ export default function App() {
 
   const startTopic = (key) => {
     setTopic(key)
-    setWord(pickWord(TOPICS[key].words))
+    setWord(pickWord(TOPICS[key].words, word))
     setGuessed([])
     setRound((r) => r + 1)
   }
