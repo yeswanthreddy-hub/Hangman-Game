@@ -2,7 +2,7 @@ export const TOPICS = {
   food: {
     emoji: '🍕',
     name: 'Food',
-    words: ['PIZZA', 'BURGER', 'TACO', 'PASTA', 'SUSHI', 'SALAD', 'CANDY', 'PANCAKE', 'WAFFLE', 'DONUT', 'MELON', 'CHERRY', 'NOODLE', 'COOKIE', 'TOAST', 'BAGEL', 'PEACH', 'MANGO', 'BROWNIE', 'PRETZEL'],
+    words: ['PIZZA', 'BURGER', 'TACO', 'PASTA', 'SUSHI', 'SALAD', 'CANDY', 'PANCAKE', 'WAFFLE', 'DONUT', 'MELON', 'CHERRY', 'NOODLE', 'COOKIE', 'TOAST', 'BAGEL', 'PEACH', 'MANGO', 'BROWNIE', 'PRETZEL', 'CHEESE', 'CROISSANT', 'PANINI', 'HONEY', 'OLIVE', 'JELLY'],
   },
   animals: {
     emoji: '🐘',
