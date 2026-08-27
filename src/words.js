@@ -7,7 +7,7 @@ export const TOPICS = {
   animals: {
     emoji: '🐘',
     name: 'Animals',
-    words: ['ELEPHANT', 'GIRAFFE', 'PANDA', 'TIGER', 'MONKEY', 'KANGAROO', 'PENGUIN', 'DOLPHIN', 'RABBIT', 'TURTLE', 'OWL', 'FOX', 'BEAR', 'ZEBRA', 'CAMEL', 'WHALE', 'PARROT', 'SNAKE', 'HEDGEHOG', 'OCTOPUS'],
+    words: ['ELEPHANT', 'GIRAFFE', 'PANDA', 'TIGER', 'MONKEY', 'KANGAROO', 'PENGUIN', 'DOLPHIN', 'RABBIT', 'TURTLE', 'OWL', 'FOX', 'BEAR', 'ZEBRA', 'CAMEL', 'WHALE', 'PARROT', 'SNAKE', 'HEDGEHOG', 'OCTOPUS', 'LLAMA', 'RACCOON', 'BADGER', 'OPOSSUM', 'PUFFIN', 'SLOTH'],
   },
   sports: {
     emoji: '⚽',
