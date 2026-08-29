@@ -17,7 +17,7 @@ export const TOPICS = {
   places: {
     emoji: '🏙️',
     name: 'Places',
-    words: ['BEACH', 'MOUNTAIN', 'CITY', 'DESERT', 'FOREST', 'ISLAND', 'AIRPORT', 'MUSEUM', 'PARK', 'HARBOR', 'CANYON', 'VILLAGE', 'COAST', 'PLAZA', 'LIGHTHOUSE', 'VALLEY', 'WATERFALL', 'CASCADE', 'METRO', 'CASTLE'],
+    words: ['BEACH', 'MOUNTAIN', 'CITY', 'DESERT', 'FOREST', 'ISLAND', 'AIRPORT', 'MUSEUM', 'PARK', 'HARBOR', 'CANYON', 'VILLAGE', 'COAST', 'PLAZA', 'LIGHTHOUSE', 'VALLEY', 'WATERFALL', 'CASCADE', 'METRO', 'CASTLE', 'BAYOU', 'GLACIER', 'STADIUM', 'QUARRY', 'DELTA', 'OASIS'],
   },
   things: {
     emoji: '🎲',
