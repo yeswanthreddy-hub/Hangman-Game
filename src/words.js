@@ -22,7 +22,7 @@ export const TOPICS = {
   things: {
     emoji: '🎲',
     name: 'Things',
-    words: ['GUITAR', 'CAMERA', 'PUZZLE', 'ROCKET', 'CLOCK', 'BALLOON', 'UMBRELLA', 'TREASURE', 'BACKPACK', 'LADDER', 'CANDLE', 'LUGGAGE', 'MIRROR', 'PILLOW', 'SANDWICH', 'TELESCOPE', 'TOASTER', 'VIOLIN', 'WALLET', 'YOYO'],
+    words: ['GUITAR', 'CAMERA', 'PUZZLE', 'ROCKET', 'CLOCK', 'BALLOON', 'UMBRELLA', 'TREASURE', 'BACKPACK', 'LADDER', 'CANDLE', 'LUGGAGE', 'MIRROR', 'PILLOW', 'SANDWICH', 'TELESCOPE', 'TOASTER', 'VIOLIN', 'WALLET', 'YOYO', 'MAGNET', 'KETTLE', 'NECKLACE', 'BASKET', 'RADIO', 'BINOCULARS'],
   },
   classroom: {
     emoji: '📚',
