@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import HangmanScene from './hangmanScene'
 import { TOPICS, TOPIC_LIST } from './words'
@@ -43,10 +43,13 @@ export default function App() {
   const over = won || lost
   const result = won ? 'won' : lost ? 'lost' : null
 
-  const handleGuess = (letter) => {
-    if (over || !word) return
-    setGuessed((prev) => (prev.includes(letter) ? prev : [...prev, letter]))
-  }
+  const handleGuess = useCallback(
+    (letter) => {
+      if (over || !word) return
+      setGuessed((prev) => (prev.includes(letter) ? prev : [...prev, letter]))
+    },
+    [over, word],
+  )
 
   useEffect(() => {
     const onKey = (event) => {
@@ -55,7 +58,7 @@ export default function App() {
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  })
+  }, [handleGuess])
 
   const letterClass = (letter) => {
     if (!guessed.includes(letter)) return 'key'
