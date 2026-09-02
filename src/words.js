@@ -27,7 +27,7 @@ export const TOPICS = {
   classroom: {
     emoji: '📚',
     name: 'Classroom',
-    words: ['PENCIL', 'ERASER', 'RULER', 'NOTEBOOK', 'BACKPACK', 'SCISSORS', 'GLUE', 'STAPLER', 'CHALKBOARD', 'CRAYON', 'GLOBE', 'COMPASS', 'PAPER', 'MARKER', 'DESK', 'BINDER', 'CALCULATOR', 'SCHOOL', 'STUDENT', 'TEACHER'],
+    words: ['PENCIL', 'ERASER', 'RULER', 'NOTEBOOK', 'BACKPACK', 'SCISSORS', 'GLUE', 'STAPLER', 'CHALKBOARD', 'CRAYON', 'GLOBE', 'COMPASS', 'PAPER', 'MARKER', 'DESK', 'BINDER', 'CALCULATOR', 'SCHOOL', 'STUDENT', 'TEACHER', 'TEXTBOOK', 'LIBRARY', 'LECTURE', 'PROTRACTOR', 'SPELLING', 'SCIENCE'],
   },
   space: {
     emoji: '🚀',
