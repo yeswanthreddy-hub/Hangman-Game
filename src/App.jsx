@@ -19,18 +19,21 @@ export default function App() {
   const [guessed, setGuessed] = useState([])
   const [round, setRound] = useState(0)
 
-  const startTopic = (key) => {
-    setTopic(key)
-    setWord(pickWord(TOPICS[key].words, word))
-    setGuessed([])
-    setRound((r) => r + 1)
-  }
+  const startTopic = useCallback(
+    (key) => {
+      setTopic(key)
+      setWord(pickWord(TOPICS[key].words, word))
+      setGuessed([])
+      setRound((r) => r + 1)
+    },
+    [word],
+  )
 
-  const goToTopics = () => {
+  const goToTopics = useCallback(() => {
     setTopic(null)
     setWord(null)
     setGuessed([])
-  }
+  }, [])
 
   const mistakes = word
     ? guessed.filter((letter) => !word.includes(letter)).length
@@ -53,12 +56,20 @@ export default function App() {
 
   useEffect(() => {
     const onKey = (event) => {
+      if (over && event.key === 'Enter') {
+        startTopic(topic)
+        return
+      }
+      if (over && event.key === 'Escape') {
+        goToTopics()
+        return
+      }
       if (!/^[a-zA-Z]$/.test(event.key)) return
       handleGuess(event.key.toUpperCase())
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [handleGuess])
+  }, [handleGuess, startTopic, goToTopics, topic, over])
 
   const letterClass = (letter) => {
     if (!guessed.includes(letter)) return 'key'
