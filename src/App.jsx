@@ -45,6 +45,7 @@ export default function App() {
   const lost = mistakes >= MAX_MISTAKES
   const over = won || lost
   const result = won ? 'won' : lost ? 'lost' : null
+  const leftover = MAX_MISTAKES - mistakes
 
   const handleGuess = useCallback(
     (letter) => {
@@ -139,6 +140,10 @@ export default function App() {
           )}
 
           <div className="hud">
+            <div className="status" role="status" aria-live="polite">
+              {!over &&
+                `${leftover} ${leftover === 1 ? 'mistake' : 'mistakes'} left`}
+            </div>
             <div className="word">
               {revealed.map((letter, i) => (
                 <span

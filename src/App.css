@@ -77,6 +77,14 @@
   box-shadow: 0 0 8px rgba(239, 68, 68, 0.8);
 }
 
+.status {
+  min-height: 1.2em;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #a5b1d4;
+}
+
 .hud {
   position: absolute;
   bottom: 0;
