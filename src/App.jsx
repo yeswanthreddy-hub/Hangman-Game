@@ -72,6 +72,12 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKey)
   }, [handleGuess, startTopic, goToTopics, topic, over])
 
+  useEffect(() => {
+    document.title = topic
+      ? `${TOPICS[topic].name} • 3D Hangman`
+      : '3D Hangman'
+  }, [topic])
+
   const letterClass = (letter) => {
     if (!guessed.includes(letter)) return 'key'
     return word.includes(letter) ? 'key key-correct' : 'key key-wrong'
