@@ -85,7 +85,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <div className="canvas-wrap">
+      <div className="canvas-wrap" aria-hidden="true">
         <Canvas key={round} camera={{ position: [4.6, 2.1, 5.6], fov: 42 }}>
           <HangmanScene stage={mistakes} result={result} />
         </Canvas>
