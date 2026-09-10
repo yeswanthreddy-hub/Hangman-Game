@@ -101,6 +101,7 @@ export default function App() {
                 <button
                   key={key}
                   className="topic"
+                  aria-label={`Play ${TOPICS[key].name}`}
                   onClick={() => startTopic(key)}
                 >
                   <span className="topic-emoji" aria-hidden="true">
