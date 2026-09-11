@@ -6,6 +6,8 @@
   background: #0b1020;
   color: #e7ecf8;
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .canvas-wrap {
@@ -157,7 +159,7 @@
 }
 
 .key:disabled {
-  cursor: default;
+  cursor: not-allowed;
   opacity: 0.55;
 }
 
