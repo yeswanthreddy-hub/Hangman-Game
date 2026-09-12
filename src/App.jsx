@@ -135,7 +135,7 @@ export default function App() {
               <div className="overlay-card">
                 <h2>{won ? 'You survived!' : 'Hanged!'}</h2>
                 <p>
-                  The word was{' '}
+                  {TOPICS[topic].emoji} {TOPICS[topic].name}: the word was{' '}
                   <strong className={won ? 'green' : 'red'}>{word}</strong>
                 </p>
                 <div className="overlay-actions">
