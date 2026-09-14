@@ -131,9 +131,14 @@ export default function App() {
           </header>
 
           {over && (
-            <div className="overlay">
+            <div
+              className="overlay"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="result-title"
+            >
               <div className="overlay-card">
-                <h2>{won ? 'You survived!' : 'Hanged!'}</h2>
+                <h2 id="result-title">{won ? 'You survived!' : 'Hanged!'}</h2>
                 <p>
                   {TOPICS[topic].emoji} {TOPICS[topic].name}: the word was{' '}
                   <strong className={won ? 'green' : 'red'}>{word}</strong>
