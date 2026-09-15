@@ -17,6 +17,23 @@ npm install
 npm run dev
 ```
 
+## How to play
+
+1. Pick a topic from the home screen.
+2. Guess letters with the on-screen keyboard or your physical keyboard.
+3. Six wrong guesses complete the hangman figure and the round is lost.
+4. Reveal every letter of the hidden word to survive the round.
+
+Tip: when a round ends, press `Enter` to play the topic again or `Escape` to go back to the topics. The same word is never drawn twice in a row when replaying a topic.
+
+## Project structure
+
+- `src/App.jsx` — game state, topic picker, keyboard, and overlays
+- `src/hangmanScene.jsx` — the 3D scaffold, figure, and scene
+- `src/words.js` — word banks and the topic list
+- `src/App.css` / `src/index.css` — styling
+- `index.html` — app entry point
+
 Build for production:
 
 ```bash
